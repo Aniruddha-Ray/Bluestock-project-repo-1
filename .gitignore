@@ -216,3 +216,27 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Bluestock Project Specific
+# Virtual environments
+bluestock_env/
+.conda/
+
+# Large data files
+data/raw/
+data/processed/
+*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
