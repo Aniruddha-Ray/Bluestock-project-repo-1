@@ -223,9 +223,9 @@ bluestock_env/
 .conda/
 
 # Large data files
-data/raw/
-data/processed/
-*.csv
+# data/raw/
+# data/processed/
+# *.csv
 
 # OS files
 .DS_Store
