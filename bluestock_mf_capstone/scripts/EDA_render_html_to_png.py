@@ -1,6 +1,5 @@
 import os
 from pathlib import Path
-import imgkit
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
@@ -61,3 +60,19 @@ for html_file in html_files:
             pass
 
 print("Conversion complete!")
+
+
+folder_path = r"C:\Users\Asus\OneDrive\Desktop\Bluestock_intern\Bluestock-project-repo-1\bluestock_mf_capstone\notebooks"  
+
+for html_file in Path(folder_path).glob("*.html"):
+    html_file.unlink()
+    print(f"Deleted: {html_file}")
+
+
+import shutil
+
+folder_path = html_dir
+
+shutil.rmtree(folder_path)
+
+print(f"Deleted: {folder_path}")
