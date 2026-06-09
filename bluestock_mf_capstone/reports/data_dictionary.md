@@ -64,3 +64,43 @@ Notes
 - Source references: each processed CSV includes the originating filename in this folder: `bluestock_mf_capstone/data/raw/`.
 - All monetary fields are expressed in INR unless noted.
 - Date columns are ISO `YYYY-MM-DD` unless the original source used month-level periods.
+
+
+
+# csv s with columns
+
+alpha_beta_data.csv
+['amfi_code', 'alpha_nifty50', 'beta_nifty50', 'alpha_nifty100', 'beta_nifty100']
+
+aum_by_fund_house_cleaned.csv
+['date', 'fund_house', 'aum_lakh_crore', 'aum_crore', 'num_schemes']
+
+benchmark_indices_cleaned.csv
+['date', 'index_name', 'close_value']
+
+category_inflows_cleaned.csv
+['month', 'category', 'net_inflow_crore']
+
+fund_master_cleaned.csv
+['amfi_code', 'fund_house', 'scheme_name', 'category', 'sub_category', 'plan', 'launch_date', 'benchmark', 'expense_ratio_pct', 'exit_load_pct', 'min_sip_amount', 'min_lumpsum_amount', 'fund_manager', 'risk_category', 'sebi_category_code']
+
+fund_scorecard.csv
+['amfi_code', 'cagr_3y', 'sharpe_ratio', 'alpha', 'expense_ratio', 'max_drawdown', 'cagr_rank', 'sharpe_rank', 'alpha_rank', 'expense_rank', 'dd_rank', 'fund_score']
+
+industry_folio_count_cleaned.csv
+['month', 'total_folios_crore', 'equity_folios_crore', 'debt_folios_crore', 'hybrid_folios_crore', 'others_folios_crore']
+
+investor_transactions_cleaned.csv
+['investor_id', 'transaction_date', 'amfi_code', 'transaction_type', 'amount_inr', 'state', 'city', 'city_tier', 'age_group', 'gender', 'annual_income_lakh', 'payment_mode', 'kyc_status']
+
+monthly_sip_inflows_cleaned.csv
+['month', 'sip_inflow_crore', 'active_sip_accounts_crore', 'new_sip_accounts_lakh', 'sip_aum_lakh_crore', 'yoy_growth_pct']
+
+nav_history_cleaned.csv
+['amfi_code', 'date', 'nav']
+
+portfolio_holdings_cleaned.csv
+['amfi_code', 'stock_symbol', 'stock_name', 'sector', 'weight_pct', 'market_value_cr', 'current_price_inr', 'portfolio_date']
+
+scheme_performance_cleaned.csv
+['amfi_code', 'scheme_name', 'fund_house', 'category', 'plan', 'return_1yr_pct', 'return_3yr_pct', 'return_5yr_pct', 'benchmark_3yr_pct', 'alpha', 'beta', 'sharpe_ratio', 'sortino_ratio', 'std_dev_ann_pct', 'max_drawdown_pct', 'aum_crore', 'expense_ratio_pct', 'morningstar_rating', 'risk_grade', 'anomally_flag']
